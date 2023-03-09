@@ -1,0 +1,20 @@
+package BaiTap8;
+import java.util.Scanner;
+public class TrungBinhCong {
+public static void main (String[] args) {
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Trong day co tat ca so nguyen duong la:");
+	int n = sc.nextInt();
+	int sum=0;
+	for(int i=1; i<=n; i++) {
+		System.out.println("Nhap vao so thu " +i);
+		sum=sc.nextInt();
+		sum+=n;
+		System.out.println("");
+	}
+	double avg=(double)sum/n;
+	System.out.println("Trung binh cong cac so da nhap la:" +avg);
+	
+	
+}
+}
